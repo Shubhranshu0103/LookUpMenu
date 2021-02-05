@@ -1,0 +1,47 @@
+.btnGrp .lookupButton {
+  background-color: rgba(34, 36, 34, 0.8); /* Green background */
+  border: 1px solid rgba(34, 36, 34, 0.8); /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  z-index: auto;
+  
+  
+}
+
+.btnGrp .lookupButton:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btnGrp {
+  
+  position:fixed;
+  display:none;
+  
+}
+
+.lookupButton {
+  display: block; 
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  
+  
+}
+
+.lookupButton:first-child{
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.lookupButton:last-child{
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+  .lookupButton:hover {
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.3);
+    text-decoration: none;
+  }
